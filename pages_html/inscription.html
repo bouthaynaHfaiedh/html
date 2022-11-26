@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription Isaas</title>
+</head>
+<body>
+    <header>
+        <img src="../images/logo_isaas.jpg" alt="logo isaas" height="80px">
+        <h1>Institut Supérieur d'Administration de Sfax</h1>
+        <img src="../images/isaas.PNG" alt="">
+        <nav>
+            <a href="../index.html">Actualité</a>
+            <a href="../pages_html/inscription.html">Inscription</a>
+            <a href="../pages_html/galerie.html">Galerie</a>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <form action="">
+                <fieldset>
+                    <legend>Inscription étudiant</legend>
+                    <table>
+                        <tr>
+                            <td><label for="nom">Nom : </label></td>
+                            <td><input type="text" name="nom" id="nom"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="prenom">Prenom : </label></td>
+                            <td><input type="text" name="prenom" id="prenom"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="naissance">Naissance : </label></td>
+                            <td><input type="date" name="naissance" id="naissance"></td>
+                        </tr>
+                        <tr>
+                            <td><label>Sexe : </label></td>
+                            <td>
+                                <input type="radio" name="sexe" id="masculin" value="1" checked="checked"><label for="masculin">Masculin</label>
+                                <input type="radio" name="sexe" id="feminin" value="2"><label for="feminin">Feminin</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="pays">Pays : </label></td>
+                            <td>
+                                <select name="pays" id="pays" size="3">
+                                    <option value="" disabled>aucune valeur</option>
+                                    <option value="tn">Tunisie</option>
+                                    <option value="fr">France</option>
+                                    <option value="en">Angleterre</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label>Langues : </label></td>
+                            <td>
+                                <input type="checkbox" name="langues[]" id="langue1" value="arable"><label for="langue1">Arabe</label><br>
+                                <input type="checkbox" name="langues[]" id="langue2" value="français"><label for="langue2">Français</label><br>
+                                <input type="checkbox" name="langues[]" id="langue3" value="anglais"><label for="langue2">Anglais</label><br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="">Image :</label></td>
+                            <td><input type="file" name="image" id="image" accept="image/*"></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><input type="submit" value="Valider" id ="valider"></td>
+                        </tr>
+                    </table>
+
+                </fieldset>
+            </form>
+        </article>
+    </main>
+    <footer>
+        <p>
+            Route de l'aéroport km 4 BP 1013 Sfax Tunisie. <br>
+            Tél : +216 74 680 460 <br>
+            Fax : +216 74 680 450 <br>
+            MAIL : contact.isaas@isaas.usf.tn
+        </p>
+    </footer>
+</body>
+</html>
